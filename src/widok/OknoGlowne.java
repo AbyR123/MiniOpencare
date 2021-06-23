@@ -6,7 +6,7 @@
 package widok;
 
 import dane.Pacjent;
-import dane.zrodla_danych.PacjentZrodlo;
+import dane.zrodlaDanych.PacjentZrodlo;
 import java.util.ArrayList;
 
 /**
