@@ -6,7 +6,7 @@
 package widok;
 
 import dane.Pacjent;
-import dane.zrodla_danych.PacjentZrodlo;
+import dane.zrodlaDanych.PacjentZrodlo;
 import java.util.ArrayList;
 
 /**
@@ -15,7 +15,7 @@ import java.util.ArrayList;
  */
 public class OknoGlowne extends javax.swing.JFrame {
 
-    private ModelTabeli mt;
+    private ModelTabeliPacjent mtP;
     private PacjentZrodlo pcZrodlo;
 
     /**
@@ -93,27 +93,8 @@ public class OknoGlowne extends javax.swing.JFrame {
     }//GEN-LAST:event_bPobierzActionPerformed
 
     public void wyswietlListePacjentow(ArrayList<Pacjent> listaPacjentow) {
-        mt = new ModelTabeli(listaPacjentow);
-        jTable1.setModel(mt);
-//
-//        jTable1.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
-//            public void valueChanged(ListSelectionEvent event) {
-//                // do some actions here, for example
-//                // print first column value from selected row       
-//
-//                if (jTable1.getSelectedRow() >= 0) {
-//                    bOtworzOkno.setEnabled(true);
-//                } else {
-//                    bOtworzOkno.setEnabled(false);
-//                }
-//
-//                //otwieranie okna z danymi pacjenta po kliknięciu w dany wiersz
-////                if (!event.getValueIsAdjusting()) {       // zapobiega otwarciu dwóch okien
-////                    Pacjent p5 = mt.pobierzPacjenta(jTable1.getSelectedRow()); 
-////                    new OknoPacjenta(p5); 
-////                }
-//            }
-//        });
+        mtP = new ModelTabeliPacjent(listaPacjentow);
+        jTable1.setModel(mtP);
     }
         /**
          * @param args the command line arguments

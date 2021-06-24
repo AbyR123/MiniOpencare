@@ -13,12 +13,12 @@ import javax.swing.table.AbstractTableModel;
 /**
  *
  */
-public class ModelTabeli extends AbstractTableModel{
+public class ModelTabeliPacjent extends AbstractTableModel{
     
     
     private ArrayList<Pacjent> listaPacjentow;
 
-    public ModelTabeli(ArrayList<Pacjent> listaPacjentow) {
+    public ModelTabeliPacjent(ArrayList<Pacjent> listaPacjentow) {
         this.listaPacjentow = listaPacjentow;
     }
 
