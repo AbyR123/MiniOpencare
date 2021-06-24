@@ -39,6 +39,7 @@ public class OknoGlowne extends javax.swing.JFrame {
      */
     public OknoGlowne() {
         initComponents();
+        bOtworzOkno.setEnabled(false);
         bEdytuj.setEnabled(false);
 
         ctr = new TableRowSorter<ModelTabeliPobyt>(mtP);
@@ -69,6 +70,7 @@ public class OknoGlowne extends javax.swing.JFrame {
         bPobierz = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        bOtworzOkno = new javax.swing.JButton();
         cbJednostkaOrganizacyjna = new javax.swing.JComboBox<>();
         tfFiltr = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -119,6 +121,13 @@ public class OknoGlowne extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(jTable1);
 
+        bOtworzOkno.setText("Otworz okno");
+        bOtworzOkno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bOtworzOknoActionPerformed(evt);
+            }
+        });
+
         cbJednostkaOrganizacyjna.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 cbJednostkaOrganizacyjnaItemStateChanged(evt);
@@ -157,7 +166,10 @@ public class OknoGlowne extends javax.swing.JFrame {
                         .add(bEdytuj, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 92, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(bPobierz, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 93, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(jScrollPane2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 670, Short.MAX_VALUE))
+                    .add(jScrollPane2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 670, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+                        .add(0, 0, Short.MAX_VALUE)
+                        .add(bOtworzOkno)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -172,7 +184,9 @@ public class OknoGlowne extends javax.swing.JFrame {
                     .add(bEdytuj))
                 .add(19, 19, 19)
                 .add(jScrollPane2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE)
-                .add(52, 52, 52))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(bOtworzOkno)
+                .add(14, 14, 14))
         );
 
         pack();
@@ -191,9 +205,22 @@ public class OknoGlowne extends javax.swing.JFrame {
         wyswietlListePobytow(listaPobytow);
     }//GEN-LAST:event_bPobierzActionPerformed
 
+    private void bOtworzOknoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bOtworzOknoActionPerformed
+
+        Pobyt pb = mtP.pobierzPobyt(jTable1.convertRowIndexToModel(jTable1.getSelectedRow()));    //convertRowIndexToModel() - odświerzanie modelu tabeli
+        try {
+            new OknoSzczegolowe(pb);
+
+        } catch (SQLException ex) {
+            Logger.getLogger(OknoGlowne.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }//GEN-LAST:event_bOtworzOknoActionPerformed
+
     private void cbJednostkaOrganizacyjnaItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbJednostkaOrganizacyjnaItemStateChanged
         if (evt.getStateChange() == ItemEvent.SELECTED && ctr != null && cbJednostkaOrganizacyjna.getSelectedItem() != null) {  //sprawdzenie czy wybrany item nie jest null
             filtry();
+
         }
     }//GEN-LAST:event_cbJednostkaOrganizacyjnaItemStateChanged
 
@@ -265,9 +292,11 @@ public class OknoGlowne extends javax.swing.JFrame {
             public void valueChanged(ListSelectionEvent event) {
 
                 if (jTable1.getSelectedRow() >= 0) {
+                    bOtworzOkno.setEnabled(true);
                     bEdytuj.setEnabled(true);
                 } else {
                     bEdytuj.setEnabled(false);
+                    bOtworzOkno.setEnabled(false);
                 }
             }
         });
@@ -292,6 +321,7 @@ public class OknoGlowne extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bEdytuj;
+    private javax.swing.JButton bOtworzOkno;
     private javax.swing.JButton bPobierz;
     private javax.swing.JComboBox<JednostkaOrganizacyjna> cbJednostkaOrganizacyjna;
     private javax.swing.JFrame jFrame1;
