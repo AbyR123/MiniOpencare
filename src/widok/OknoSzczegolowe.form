@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="modalExclusionType" type="java.awt.Dialog$ModalExclusionType" editor="org.netbeans.modules.form.editors.EnumEditor">
+      <Value id="null"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="Formularze" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="Formularze" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="Formularze">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Pobyt">
+                <Property name="tabTitle" type="java.lang.String" value="Pobyt"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="taPobyt">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Pacjent">
+                <Property name="tabTitle" type="java.lang.String" value="Pacjent"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="taPacjent">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Lekarz">
+                <Property name="tabTitle" type="java.lang.String" value="Lekarz"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="taLekarz">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Badania">
+                <Property name="tabTitle" type="java.lang.String" value="Badania"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="tpBadania" min="-2" pref="630" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="tpBadania" min="-2" pref="541" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JTabbedPane" name="tpBadania">
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="USG"/>
+              </AccessibilityProperties>
+              <Events>
+                <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="tpBadaniaStateChanged"/>
+              </Events>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="pEkg">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="EKG">
+                        <Property name="tabTitle" type="java.lang.String" value="EKG"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="lListaBadanEkg" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="cbEkgLista" pref="181" max="32767" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jSeparator2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                                              <Component id="jSeparator3" min="-2" pref="10" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                                              <Component id="jLabel4" max="32767" attributes="0"/>
+                                                              <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
+                                                              <Component id="jLabel7" alignment="0" min="-2" pref="124" max="-2" attributes="0"/>
+                                                              <Group type="102" alignment="1" attributes="0">
+                                                                  <EmptySpace pref="61" max="32767" attributes="0"/>
+                                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                                      <Component id="jLabel11" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                                                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                                                          <Component id="jLabel10" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                                                          <Component id="jLabel9" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                                                      </Group>
+                                                                  </Group>
+                                                              </Group>
+                                                          </Group>
+                                                          <Component id="jLabel8" alignment="0" min="-2" pref="124" max="-2" attributes="0"/>
+                                                          <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="tfEkgWar1" alignment="1" max="32767" attributes="0"/>
+                                                          <Component id="tfEkgRytm" alignment="1" max="32767" attributes="0"/>
+                                                          <Component id="jScrollPane5" alignment="1" max="32767" attributes="0"/>
+                                                          <Component id="tfEkgDataBad" alignment="1" max="32767" attributes="0"/>
+                                                          <Component id="tfEkgLekarz" alignment="1" max="32767" attributes="0"/>
+                                                          <Component id="tfEkgPobyt" alignment="1" max="32767" attributes="0"/>
+                                                          <Component id="tfEkgWar2" min="-2" pref="247" max="-2" attributes="0"/>
+                                                          <Component id="tfEkgId" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <Component id="jSeparator4" alignment="0" min="-2" pref="395" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="bUsunEkg" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="bZapiszEkg" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="lListaBadanEkg" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jSeparator3" pref="304" max="32767" attributes="0"/>
+                                      <Component id="jSeparator2" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="cbEkgLista" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfEkgId" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfEkgPobyt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfEkgLekarz" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfEkgDataBad" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane5" min="-2" pref="103" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfEkgRytm" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfEkgWar1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="tfEkgWar2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Component id="jSeparator4" min="-2" pref="10" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="bUsunEkg" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bZapiszEkg" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="89" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="jLabel4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Pobyt pacjenta: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfEkgPobyt">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Lekarz opisuj&#x105;cy:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfEkgLekarz">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Data badania:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfEkgDataBad">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel7">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Wynik opisowy:"/>
+                      </Properties>
+                    </Component>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTextArea" name="tfEkgOpis">
+                          <Properties>
+                            <Property name="columns" type="int" value="20"/>
+                            <Property name="rows" type="int" value="5"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JLabel" name="jLabel8">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Parametry EKG:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfEkgRytm">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel9">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Rytm:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel10">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Warto&#x15b;&#x107; 1: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfEkgWar1">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel11">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Warto&#x15b;&#x107; 2:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfEkgWar2">
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator2">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lListaBadanEkg">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Lista bada&#x144;:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator3">
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="cbEkgLista">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="0"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="cbEkgListaItemStateChanged"/>
+                      </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Badanie&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Id badania:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfEkgId">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="bUsunEkg">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Usu&#x144;"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bUsunEkgActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="bZapiszEkg">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Zapisz"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bZapiszEkgActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator4">
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="pUsg">
+                  <AccessibilityProperties>
+                    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="USG"/>
+                  </AccessibilityProperties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="USG">
+                        <Property name="tabTitle" type="java.lang.String" value="USG"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lListaBadanUsg" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="cbUsgLista" pref="181" max="32767" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jSeparator5" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                                              <Component id="jSeparator6" min="-2" pref="10" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jSeparator7" min="-2" pref="395" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="jLabel14" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="jLabel15" alignment="0" pref="130" max="32767" attributes="0"/>
+                                                          <Component id="jLabel16" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="jLabel17" alignment="0" min="-2" pref="124" max="-2" attributes="0"/>
+                                                          <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jLabel19" alignment="0" max="32767" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="cbUsgListaNazw" pref="247" max="32767" attributes="0"/>
+                                                          <Component id="jScrollPane6" alignment="1" pref="247" max="32767" attributes="0"/>
+                                                          <Component id="tfUsgDataBad" alignment="1" max="32767" attributes="0"/>
+                                                          <Component id="tfUsgLekarz" alignment="1" max="32767" attributes="0"/>
+                                                          <Component id="tfUsgPobyt" alignment="1" max="32767" attributes="0"/>
+                                                          <Component id="tfUsgId" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="bUsunUsg" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="bZapiszUsg" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="lListaBadanUsg" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jSeparator6" alignment="0" pref="304" max="32767" attributes="0"/>
+                                      <Component id="jSeparator5" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="cbUsgLista" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfUsgId" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfUsgPobyt" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfUsgLekarz" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfUsgDataBad" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane6" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbUsgListaNazw" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                              <Component id="jSeparator7" min="-2" pref="10" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="bUsunUsg" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bZapiszUsg" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="91" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="jLabel14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Pobyt pacjenta: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfUsgPobyt">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel15">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Lekarz opisuj&#x105;cy:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfUsgLekarz">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel16">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Data badania:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfUsgDataBad">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel17">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Wynik opisowy:"/>
+                      </Properties>
+                    </Component>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTextArea" name="tfUsgOpis">
+                          <Properties>
+                            <Property name="columns" type="int" value="20"/>
+                            <Property name="rows" type="int" value="5"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JLabel" name="jLabel19">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Rodzaj badania  USG: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator5">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lListaBadanUsg">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Lista bada&#x144;:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator6">
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="cbUsgLista">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="0"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="cbUsgListaItemStateChanged"/>
+                      </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Badanie&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel23">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Id badania:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfUsgId">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="bUsunUsg">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Usu&#x144;"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bUsunUsgActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="bZapiszUsg">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Zapisz"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bZapiszUsgActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator7">
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="cbUsgListaNazw">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="0"/>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Usg&gt;"/>
+                      </AuxValues>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="pDodajBadanie">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="+">
+                        <Property name="tabTitle" type="java.lang.String" value="+"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="628" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="515" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

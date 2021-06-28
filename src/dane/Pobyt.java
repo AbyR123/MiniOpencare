@@ -20,6 +20,10 @@ public class Pobyt {
     private JednostkaOrganizacyjna jo;
     private Lekarz lekarz;
 
+    public Pobyt(int id) {
+        this.id = id;
+    }
+
     public Pobyt(int id, Date dataOd, Date dataDo, Pacjent pacjent, JednostkaOrganizacyjna jo) {
         this.id = id;
         this.dataOd = dataOd;

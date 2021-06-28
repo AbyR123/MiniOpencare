@@ -4,30 +4,37 @@
  * and open the template in the editor.
  */
 package dane;
+
+import java.util.Date;
+
 /**
  *
  * @author brybarczyk
  */
-public class JednostkaOrganizacyjna {
-    private int id;
+public class Usg extends Badanie {
+    private int nazwaId;
     private String nazwa;
 
-    public JednostkaOrganizacyjna(int id, String nazwa) {
-        this.id = id;
+    public Usg() {
+    }
+
+    public Usg(int nazwaId, String nazwa) {
+        this.nazwaId = nazwaId;
         this.nazwa = nazwa;
     }
 
-    public JednostkaOrganizacyjna(String nazwa) {
+    public Usg(int id, Date dataBadania, String wynikOpisowy, Pobyt pb, Lekarz lekarz, int nazwaId, String nazwa) {
+        super(id, dataBadania, wynikOpisowy, pb, lekarz);
+        this.nazwaId = nazwaId;
         this.nazwa = nazwa;
     }
 
-    
-    public int getId() {
-        return id;
+    public int getNazwaId() {
+        return nazwaId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setNazwaId(int nazwaId) {
+        this.nazwaId = nazwaId;
     }
 
     public String getNazwa() {
@@ -39,11 +46,6 @@ public class JednostkaOrganizacyjna {
     }
 
     @Override
-    public String toString() {
-        return nazwa ;
-    }
-
-    @Override       // nadpisanie hashCode i equals umożliwia wyświetlenie w cbJednostkaOrganizacyjnaOE.setSelectedItem(pb1.getJo()); prawidłowego oddziału
     public int hashCode() {
         int hash = 7;
         return hash;
@@ -60,11 +62,15 @@ public class JednostkaOrganizacyjna {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final JednostkaOrganizacyjna other = (JednostkaOrganizacyjna) obj;
-        if (this.id != other.id) {
+        final Usg other = (Usg) obj;
+        if (this.nazwaId != other.nazwaId) {
             return false;
         }
         return true;
     }
-    
+
+    @Override
+    public String toString() {
+        return nazwa;
+    }
 }

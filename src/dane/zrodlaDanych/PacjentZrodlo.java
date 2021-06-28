@@ -10,17 +10,10 @@ import java.util.ArrayList;
 
 /**
  *
- * @author brybarczyk
  */
 public class PacjentZrodlo {
-    
-        private BazaDanych bd;
-    
-    public PacjentZrodlo() {
-                bd = new BazaDanych();
-    }
-
-    public ArrayList<Pacjent> pobierzListePacjentow() {
+        public ArrayList<Pacjent> pobierzListePacjentow() {
+            
         ArrayList<Pacjent> lista = new ArrayList();
 
         Pacjent p1 = new Pacjent();
@@ -47,7 +40,4 @@ public class PacjentZrodlo {
 
         return lista;
     }
-
-
-
 }
